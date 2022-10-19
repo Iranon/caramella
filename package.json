@@ -1,0 +1,40 @@
+{
+  "name": "caramella",
+  "version": "0.0.0",
+  "description": "A Gum wrapper for Node",
+  "main": "index.ts",
+  "bin": {
+    "caramella": "./dist/caramella.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "npm run build && node ./dist/caramella.js",
+    "prepublishOnly": "webpack --mode=production"
+  },
+  "keywords": [
+    "tui",
+    "cli",
+    "gum",
+    "node",
+    "wrapper",
+    "terminal"
+  ],
+  "author": "mat.vin [Iranon]",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Iranon/caramella"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.0",
+    "@types/node": "^18.11.0",
+    "ts-loader": "^9.4.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-shebang-plugin": "^1.1.8"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9"
+  }
+}
